@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Button Text Copy</title>
     <script>
-        function copyButtonText() {
-            const buttonText = document.getElementById("copyButton").innerText;
+        function copyButtonText(button) {
+            const buttonText = button.innerText;
             const tempInput = document.createElement("input");
             document.body.appendChild(tempInput);
             tempInput.value = buttonText;
@@ -22,27 +22,27 @@
     <table>
         <thead>
           <tr>
-            <th><button id="copyButton" onclick="copyButtonText()">A 棟 19 樓</button></th>
-            <th><button id="copyButton" onclick="copyButtonText()">A 棟 18 樓</button></th>
-            <th><button id="copyButton" onclick="copyButtonText()">A 棟 17 樓</button></th>
-            <th><button id="copyButton" onclick="copyButtonText()">A 棟 16 樓</button></th>
-            <th><button id="copyButton" onclick="copyButtonText()">A 棟 15 樓</button></th>
+            <th><button id="copyButton" onclick="copyButtonText(this)">A 棟 19 樓</button></th>
+            <th><button id="copyButton" onclick="copyButtonText(this)">A 棟 18 樓</button></th>
+            <th><button id="copyButton" onclick="copyButtonText(this)">A 棟 17 樓</button></th>
+            <th><button id="copyButton" onclick="copyButtonText(this)">A 棟 16 樓</button></th>
+            <th><button id="copyButton" onclick="copyButtonText(this)">A 棟 15 樓</button></th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td><button id="copyButton" onclick="copyButtonText()">A 棟 14 樓</button></td>
-            <td><button id="copyButton" onclick="copyButtonText()">A 棟 13 樓</button></td>
-            <td><button id="copyButton" onclick="copyButtonText()">A 棟 12 樓</button></td>
-            <td><button id="copyButton" onclick="copyButtonText()">A 棟 11 樓</button></td>
-            <td><button id="copyButton" onclick="copyButtonText()">A 棟 10 樓</button></td>
+            <td><button id="copyButton" onclick="copyButtonText(this)">A 棟 14 樓</button></td>
+            <td><button id="copyButton" onclick="copyButtonText(this)">A 棟 13 樓</button></td>
+            <td><button id="copyButton" onclick="copyButtonText(this)">A 棟 12 樓</button></td>
+            <td><button id="copyButton" onclick="copyButtonText(this)">A 棟 11 樓</button></td>
+            <td><button id="copyButton" onclick="copyButtonText(this)">A 棟 10 樓</button></td>
           </tr>
           <tr>
-            <td><button id="copyButton" onclick="copyButtonText()">A 棟 9 樓</button></td>
-            <td><button id="copyButton" onclick="copyButtonText()">A 棟 8 樓</button></td>
-            <td><button id="copyButton" onclick="copyButtonText()">A 棟 7 樓</button></td>
-            <td><button id="copyButton" onclick="copyButtonText()">A 棟 6 樓</button></td>
-            <td><button id="copyButton" onclick="copyButtonText()">A 棟 5 樓</button></td>
+            <td><button id="copyButton" onclick="copyButtonText(this)">A 棟 9 樓</button></td>
+            <td><button id="copyButton" onclick="copyButtonText(this)">A 棟 8 樓</button></td>
+            <td><button id="copyButton" onclick="copyButtonText(this)">A 棟 7 樓</button></td>
+            <td><button id="copyButton" onclick="copyButtonText(this)">A 棟 6 樓</button></td>
+            <td><button id="copyButton" onclick="copyButtonText(this)">A 棟 5 樓</button></td>
           </tr>
           <tr>
             <td><button id="copyButton" onclick="copyButtonText()">A 棟 2 樓</button></td>
@@ -59,19 +59,19 @@
     <table>
         <thead>
           <tr>
-            <th><button id="copyButton" onclick="copyButtonText()">B 棟 26 樓</button></th>
-            <th><button id="copyButton" onclick="copyButtonText()">B 棟 21 樓</button></th>
-            <th><button id="copyButton" onclick="copyButtonText()">B 棟 17 樓</button></th>
-            <th><button id="copyButton" onclick="copyButtonText()">B 棟 16 樓</button></th>
-            <th><button id="copyButton" onclick="copyButtonText()">B 棟 7 樓</button></th>
+            <th><button id="copyButton" onclick="copyButtonText(this)">B 棟 26 樓</button></th>
+            <th><button id="copyButton" onclick="copyButtonText(this)">B 棟 21 樓</button></th>
+            <th><button id="copyButton" onclick="copyButtonText(this)">B 棟 17 樓</button></th>
+            <th><button id="copyButton" onclick="copyButtonText(this)">B 棟 16 樓</button></th>
+            <th><button id="copyButton" onclick="copyButtonText(this)">B 棟 7 樓</button></th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td><button id="copyButton" onclick="copyButtonText()">B 棟 6 樓</button></td>
-            <td><button id="copyButton" onclick="copyButtonText()">B 棟 5 樓</button></td>
-            <td><button id="copyButton" onclick="copyButtonText()">B 棟 4 樓</button></td>
-            <td><button id="copyButton" onclick="copyButtonText()">B 棟 3 樓</button></td>
+            <td><button id="copyButton" onclick="copyButtonText(this)">B 棟 6 樓</button></td>
+            <td><button id="copyButton" onclick="copyButtonText(this)">B 棟 5 樓</button></td>
+            <td><button id="copyButton" onclick="copyButtonText(this)">B 棟 4 樓</button></td>
+            <td><button id="copyButton" onclick="copyButtonText(this)">B 棟 3 樓</button></td>
             <td></td>
           </tr>
         </tbody>
