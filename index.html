@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Text Copy</title>
+    <script>
+        function copyButtonText() {
+            const buttonText = document.getElementById("copyButton").innerText;
+            const tempInput = document.createElement("input");
+            document.body.appendChild(tempInput);
+            tempInput.value = buttonText;
+            tempInput.select();
+            document.execCommand("copy");
+            document.body.removeChild(tempInput);
+        }
+    </script>
+</head>
+<body>
+    <button id="copyButton" onclick="copyButtonText()">Copy me!</button>
+</body>
+</html>
